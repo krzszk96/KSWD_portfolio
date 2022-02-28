@@ -30,6 +30,11 @@
   &:hover,
   active,
   visited {
+    opacity: 0.9;
+    text-decoration: none !important;
+  }
+  &:active,
+  visited {
     text-decoration: none !important;
   }
 }
@@ -53,9 +58,6 @@
     width: 25px;
     height: 25px;
   }
-}
-.menu-btn:hover + .menu-btn-label {
-  opacity: 0.9;
 }
 .menu-btn-label {
   font-size: 0.8rem;

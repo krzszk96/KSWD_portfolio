@@ -1,5 +1,28 @@
 .face-wrap {
   display: flex;
   justify-content: center;
-  background-color: gainsboro;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+  }
+}
+.face-wrap img {
+  width: 100px;
+
+  @include media-breakpoint-down(md) {
+    width: 80px;
+  }
+}
+.line-wrap {
+  display: flex;
+  justify-content: center;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+.line-top {
+  margin: 8px 0;
+  width: 2px;
+  background-color: $color-primary;
 }
