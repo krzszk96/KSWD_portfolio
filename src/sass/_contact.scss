@@ -1,0 +1,112 @@
+.contacts-wrap {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+.left-col-contacts,
+.right-col-contacts {
+  margin: 150px 0;
+  width: calc(100% - 2px);
+
+  @include media-breakpoint-down(md) {
+    margin: 50px 0;
+  }
+}
+.left-col-contacts {
+  text-align: right;
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+.line-middle-contacts {
+  width: 2px;
+  background-color: $color-primary;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+.contact-block {
+  margin-right: 50px;
+
+  @include media-breakpoint-down(md) {
+    margin-right: 0;
+  }
+}
+.contact-desc {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.form-wrap form button,
+.dowload-cv-btn {
+  width: 180px;
+  height: 50px;
+  background-color: $color-primary;
+  border: none;
+  color: $color-secondary;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+
+  &:hover {
+    filter: grayscale(0);
+    top: -10px;
+    box-shadow: 0px 8px 26px -10px rgba(66, 68, 90, 1);
+  }
+}
+.form-wrap {
+  margin-left: 50px;
+
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+  }
+}
+.form-wrap form {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-down(md) {
+    align-items: center;
+  }
+}
+.form-wrap form input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: none;
+  border: 2px solid $color-primary;
+  padding: 10px;
+  color: $color-primary;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+
+  &::placeholder {
+    color: $color-primary;
+  }
+}
+.form-wrap form textarea {
+  min-height: 150px;
+}
+.form-wrap form button {
+  margin-top: 30px;
+}
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+  outline: none;
+}

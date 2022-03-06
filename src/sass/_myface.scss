@@ -13,6 +13,18 @@
     width: 80px;
   }
 }
+.face-mobile {
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+.face-desk {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
 .line-wrap {
   display: flex;
   justify-content: center;
@@ -25,4 +37,15 @@
   margin: 8px 0;
   width: 2px;
   background-color: $color-primary;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  font-family: "Roboto", sans-serif;
+
+  @include media-breakpoint-down(md) {
+    margin: 100px 0;
+  }
 }

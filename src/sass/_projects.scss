@@ -1,6 +1,7 @@
 .projects-wrap {
   display: flex;
   margin-top: 8px;
+  margin-bottom: 10px;
 
   @include media-breakpoint-down(md) {
     flex-direction: column;
@@ -16,9 +17,11 @@
 }
 .right-col {
   margin-top: 200px;
+  margin-bottom: 200px;
 
   @include media-breakpoint-down(md) {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .line-middle {

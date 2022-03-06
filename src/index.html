@@ -9,6 +9,12 @@
 </head>
 <body>
 
+  <div class="container flex-column">
+    <div class="face-wrap face-mobile">
+      <img src=".\img\face.svg">
+    </div>
+  </div>
+
   <nav class="top-nav">
       <!-- page title photo main on small -->
     <img class="page-title-small" src=".\img\title.svg">
@@ -22,7 +28,7 @@
       </a>
       <a href="#" class="menu-btn-wrap">
         <button class="menu-btn btn-1">
-          <img src=".\img\globe.svg">
+          <img src=".\img\email.svg">
         </button>
         <div class="menu-btn-label">KONTAKT</div>
       </a>
@@ -33,13 +39,13 @@
     <div class="menu-btns-right">
       <a href="#" class="menu-btn-wrap">
         <button class="menu-btn btn-1">
-          <img src=".\img\globe.svg">
+          <img src=".\img\github.svg">
         </button>
         <div class="menu-btn-label">GITHUB</div>
       </a>
       <a href="#" class="menu-btn-wrap">
         <button class="menu-btn btn-1">
-          <img src=".\img\globe.svg">
+          <img src=".\img\linkedin.svg">
         </button>
         <div class="menu-btn-label">LINKEDIN</div>
       </a>
@@ -50,9 +56,13 @@
     <div class="line-wrap">
       <div class="line-top">&nbsp</div>
     </div>
-        <div class="face-wrap">
+    <div class="face-wrap face-desk">
       <img src=".\img\face.svg">
     </div>
+    <div class="line-wrap">
+      <div class="line-top">&nbsp</div>
+    </div>
+    <div class="section-title">  MOJE PROJEKTY  </div>
   </div>
 
   <div class="container projects-wrap">
@@ -125,6 +135,37 @@
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <div class="container flex-column">
+    <div class="section-title">  KONTAKT  </div>
+  </div>
+
+  <div class="container contacts-wrap">
+    <!-- left column with contacts -->
+    <div class="left-col-contacts">
+      <div class="contact-block">
+        <div class="contact-desc">Zapraszam do kontaktu. </br>
+          Jestem otwarty na propozycje współpracy 
+          na pełen etat jak i pracy przy pojedyńczych projektach  
+        </div>
+        <button class="dowload-cv-btn">Pobierz CV</button>
+      </div>
+    </div>
+      <!-- middle line separator -->
+    <div class="line-middle-contacts">&nbsp</div>
+      <!-- right column with contacts -->
+    <div class="right-col-contacts">
+      <div class="form-wrap">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Imię" required/>
+          <input type="email" name="email" placeholder="E-mail" required/>
+          <input type="text" name="company" placeholder="Firma" required/>
+          <textarea name="message" placeholder="Wiadomość" required></textarea>
+          <button type="submit">WYŚLIJ</button>
+        </form>
+      </div>
     </div>
   </div>
 
