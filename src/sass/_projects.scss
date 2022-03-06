@@ -33,7 +33,7 @@
   }
 }
 .project-block {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .proj-title {
   font-size: 1.2rem;
@@ -58,7 +58,7 @@
 }
 .proj-tech {
   font-size: 0.9rem;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 .proj-link {
   text-decoration: none;
@@ -87,12 +87,13 @@
   }
 }
 .proj-info-block img {
-  width: 90%;
-  margin: 20px;
+  width: 100%;
+  height: auto;
   filter: grayscale(100%);
   position: relative;
   top: 0;
   transition: top ease 0.5s;
+  border: 1px solid rgb(216, 216, 216);
 
   &:hover {
     filter: grayscale(0);
