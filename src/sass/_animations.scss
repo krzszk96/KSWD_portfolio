@@ -1,0 +1,63 @@
+@keyframes ease-in-left {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes ease-in-right {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes ease-in-top {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-btns-left {
+  position: relative;
+  animation: ease-in-left 2s ease-in-out;
+}
+.menu-btns-right {
+  position: relative;
+  animation: ease-in-right 2s ease-in-out;
+}
+.page-title-big {
+  animation: appear 2s ease-in-out;
+}
+.line-middle,
+.face-container,
+.page-title-small,
+.face-mobile {
+  animation: appear 2s ease-in-out;
+}
+.right-col {
+  position: relative;
+  animation: ease-in-right 2s;
+}
+.left-col {
+  position: relative;
+  animation: ease-in-left 2s;
+}
